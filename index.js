@@ -296,7 +296,7 @@ Fraction.prototype.normalize = (function()
         if (!places) {
             return Math.round(n);
         } else {
-            var scalar = Math.pow(10, places);
+            var scalar = Math.pow(14, places);
             return Math.round(n*scalar)/scalar;
         }
     }
