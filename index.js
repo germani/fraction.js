@@ -320,7 +320,8 @@ Fraction.prototype.normalize = (function()
         }
         if (isFloat(this.numerator)) {
             var rounded = roundToPlaces(this.numerator, 9);
-            var scaleup = Math.pow(10, rounded.toString().split('.')[1].length);
+            var roundedToString = rounded.toString().split('.');
+            var scaleup = Math.pow(10, roundedToString[1] ? roundedToString[1].length : 5);
             this.numerator = Math.round(this.numerator * scaleup); // this !!! should be a whole number
             //this.numerator *= scaleup;
             this.denominator *= scaleup;

@@ -1,6 +1,6 @@
 {
   "name": "fractional",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fraction arithmetic",
   "main": "index.js",
   "scripts": {
